@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markup Test</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="preload"
+      href="./fonts/Roboto-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="./fonts/Montserrat-Medium.woff"
+      as="font"
+      type="font/woff"
+      crossorigin=""
+    />
+    <link type="image/png" href="/assets/fav.png" rel="icon" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="vector">
+      <img
+        src="./assets/vector-header.webp"
+        alt="Vector Image"
+        class="vector__image"
+        width="630"
+        height="398"
+        loading="lazy"
+      />
+    </div>
+    <div class="vector2">
+      <img
+        src="./assets/vector-footer.webp"
+        alt="Vector Image"
+        class="vector__image"
+        width="210"
+        height="368"
+        loading="lazy"
+      />
+    </div>
+    <header class="header">
+      <div class="container">
+        <img
+          src="./assets/logo.webp"
+          alt="Markup Test Logo"
+          class="header__logo"
+          width="138"
+          height="138"
+          loading="lazy"
+        />
+        <div class="header__content">
+          <div class="header__content-title">
+            <h1 class="header__title-heading">monblanproject</h1>
+            <div class="header__title-btn">
+              <span>Start on 17-02-2016</span>
+            </div>
+          </div>
+          <div class="header__content-info">
+            <div class="header__info-item">
+              <span class="header__item-strong">870</span>
+              <span class="header__item-text">posts</span>
+            </div>
+            <div class="header__info-item">
+              <span class="header__item-strong">11,787</span>
+              <span class="header__item-text">followers</span>
+            </div>
+            <div class="header__info-item">
+              <span class="header__item-strong">112</span>
+              <span class="header__item-text">following</span>
+            </div>
+          </div>
+          <div class="header__content-date">
+            <span class="header__date-text">Date</span>
+            <div class="header__date-inputs">
+              <div class="header__date-inputs">
+                <div class="header__inputs-item">
+                  <input
+                    type="text"
+                    class="header__item-input"
+                    placeholder="From"
+                    data-input
+                    name="from"
+                  />
+                  <button
+                    type="button"
+                    class="header__item-btn remove"
+                    data-clear
+                    name="remove"
+                    aria-label="remove icon"
+                  >
+                    <img
+                      src="./assets/icons/close.svg"
+                      alt="remove icon"
+                      width="14"
+                      height="14"
+                      loading="lazy"
+                    />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="header__item-btn calendar"
+                    data-toggle
+                    name="calendar"
+                    aria-label="calendar icon"
+                  >
+                    <img
+                      src="./assets/icons/calendar.svg"
+                      alt="calendar icon"
+                      width="18"
+                      height="20"
+                      loading="lazy"
+                      name="calendar"
+                    />
+                  </button>
+                </div>
+
+                <div class="header__inputs-item">
+                  <input
+                    type="text"
+                    class="header__item-input"
+                    placeholder="To"
+                    data-input
+                    name="to"
+                  />
+                  <button
+                    type="button"
+                    class="header__item-btn remove"
+                    data-clear
+                    name="remove"
+                    aria-label="remove icon"
+                  >
+                    <img
+                      src="./assets/icons/close.svg"
+                      alt="remove icon"
+                      width="14"
+                      height="14"
+                      loading="lazy"
+                    />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="header__item-btn calendar"
+                    data-toggle
+                    name="calendar"
+                    aria-label="calendar icon"
+                  >
+                    <img
+                      src="./assets/icons/calendar.svg"
+                      alt="calendar icon"
+                      width="18"
+                      height="20"
+                      loading="lazy"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__burger">
+          <svg
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="https://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M5 12H20"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M5 17H20"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M5 7H20"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <div class="burger">
+      <div class="burger__content">
+        <div class="burger__top">
+          <h1 class="burger__title">monblanproject</h1>
+
+          <div class="burger__badge">
+            <span>Start on 17-02-2016</span>
+          </div>
+        </div>
+
+        <div class="burger__stats">
+          <div class="burger__stat">
+            <span class="burger__stat-value">870</span>
+            <span class="burger__stat-label">posts</span>
+          </div>
+
+          <div class="burger__stat">
+            <span class="burger__stat-value">11,787</span>
+            <span class="burger__stat-label">followers</span>
+          </div>
+
+          <div class="burger__stat">
+            <span class="burger__stat-value">112</span>
+            <span class="burger__stat-label">following</span>
+          </div>
+        </div>
+
+        <div class="burger__date">
+          <span class="burger__date-label">Date</span>
+
+          <div class="burger__date-range">
+            <div class="burger__field">
+              <input
+                type="text"
+                class="burger__input"
+                placeholder="From"
+                data-input
+                name="from"
+              />
+
+              <button
+                type="button"
+                class="burger__btn burger__btn--clear"
+                data-clear
+                name="remove"
+                aria-label="remove icon"
+              >
+                <img src="./assets/icons/close.svg" alt="" />
+              </button>
+
+              <button
+                type="button"
+                class="burger__btn burger__btn--toggle"
+                data-toggle
+                name="calendar"
+                aria-label="calendar icon"
+              >
+                <img src="./assets/icons/calendar.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="burger__field">
+              <input
+                type="text"
+                class="burger__input"
+                placeholder="To"
+                data-input
+                name="to"
+              />
+
+              <button
+                type="button"
+                class="burger__btn burger__btn--clear"
+                data-clear
+                name="remove"
+                aria-label="remove icon"
+              >
+                <img src="./assets/icons/close.svg" alt="" />
+              </button>
+
+              <button
+                type="button"
+                class="burger__btn burger__btn--toggle"
+                data-toggle
+                name="calendar"
+                aria-label="calendar icon"
+              >
+                <img src="./assets/icons/calendar.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="visability">
+          <div class="rows active" data-type="rows">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="tiles" data-type="tiles">
+            <svg
+              width="24"
+              height="22"
+              viewBox="0 0 24 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="6" height="6" fill="#C8C7C7" />
+              <rect y="8" width="6" height="6" fill="#C8C7C7" />
+              <rect y="16" width="6" height="6" fill="#C8C7C7" />
+              <rect x="9" y="10" width="15" height="2" fill="#C8C7C7" />
+              <rect x="9" y="18" width="15" height="2" fill="#C8C7C7" />
+              <rect x="9" y="2" width="15" height="2" fill="#C8C7C7" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="posts rows"></div>
+        <div class="posts__load">Load More</div>
+      </div>
+    </main>
+  </body>
+</html>
